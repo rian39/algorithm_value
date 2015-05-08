@@ -1,0 +1,59 @@
+# Theme: sorting and valuing things with algorithms
+
+# Learning machines and their passion for error 
+
+In very many settings today, algorithms that learn are highly valued. What does it mean for an algorithm to learn, and to learn in so many different settings (stock markets, scientific fields, medicine, media and entertainment, etc.)? What kind of pedagogy, training, testing and examination accompanies this learning? Typically, such algorithms are trained during a 'supervised learning' phase, and then tested for their ability to 'generalize' to hitherto unseen cases. The power of such 'learning machines' to classify, rank or predict depends less on an innately powerful algorithm shredding data like a food processor than on disciplined alignments between the data that the algorithm encounters, penalised treatments of variations and mis-classifications, and a thoroughly test-based optimisation of algorithmic movements. In many ways, this mode of algorithmic disciplining seems to owe much more to disciplinary techniques of power than it does to mathematics, computer science or statistics. If that is the case, and if we are seeing a generalization of algorithmic power, then this disciplinary mode of formation of algorithmic learning (a formation in which algorithms are more like delinquent juveniles than sovereign abstractions) may have powerful effects on the forms of sorting, ordering, classification and regulation assembled in contemporary social fields. At the core of this disciplinary formation of machine learners lies an irreducible potency of error, which is both the target of much optimisation and the margin of indeterminacy whose ongoing presence animates a seemingly inexorable intensification of algorithmic processing.  A small, almost toy demonstration of facial recognition algorithms, `kittydar`, illustrates both the power and problems of this sorting power. On the one hand, after its training phase has finished, `kittydar` is mostly automatic in its sorting of images of cat faces. On the other hand, the work that prepares and repairs this capacity to sort means that any appearance of learning and any performance of automatic face recognition involves multiple agents acting at different times. 
+
+
+- repertoire of how value is made -- mode of abstraction; 
+
+## kittydar in action
+
+- kittydar detects cat faces in digital images -- sometimes. In that sense, it is a sorting mechanism.  
+- show kittydar in action; nothing too much at stake here except that
+    1. the images it deals with stand for disorder and unruly multiplicities, particularly those associated with markets, popular culture, but also contagions and diseases, etc: cat images are like a plague on the internet
+    2. the performance of the algorithm relies on a good deal of prior preparation, very little of which is visible in its operation, or indeed even in the code
+    3. the algorithm works sometimes and doesn't work other times. 
+
+- while kittydar is a toy, like many toys it indexes a whole set of wider-ranging transformations. The kinds of classifying it does matter in science, in commerce, in industry and government in various ways. The problem of detecting cats stands in for problems that range from detecting malignancies to finding the Higgs Boson (see recent machine learning competitions), from recognising handwritten digits to navigating autonomous vehicles. 
+
+## what does kittydar do?
+
+- kittydar is a machine learner. 
+- typical of category of algorithms known as machine learners. They are distinguished by their capacity to learn from data. What learning means here, what data is, and indeed, the kind of movement entailed in that little world 'from' is matter for discussion. But clearly kittydar is a different kind of algorithm to sorting algorithms taught in CompSci101 -- the bubblesort, the quicksort, etc. It is sorting of a different order. 
+- We could observe that the term machine learner applies both to the algorithms and the people in the field of machine learning. This slippage or elision around who is learning is important, and indeed, I would suggest, constitutive of the value chains rolling out of machine learning in the last decade or so. 
+- kittydar is a predictive classifier. Given an image it has never seen before, it locates cats faces. It is a classifier in the sense that it basically classifies regions of an image in terms of cats.
+- How did kittydar learn to classify cats? It draws on two major resources to do that. 
+    - a fairly large sample of cat images -- a cat dataset -- collected from the internet used to 'train' kittydar; we should note that these images are themselves already the product of extensive algorithmic work. Such datasets can be relatively easily located [CAT dataset](http://137.189.35.203/WebUI/CatDatabase/catData.html). Note in passing that the images themselves already have a thoroughly algorithmic texture. They are all in jpeg format, which means they are the product of the encoding, transformation, quantization algorithms used in JPEG. But these algorithmics are not  machine learners.  
+    - By contrast, two different machine learning classifiers -- neural network and a support vector machine -- that have been trained on the cat dataset and then classify any further images that we supply. The workings of these two algorithms aren't exactly my topic here but we should point out that both algorithms are the object of very intense interest and investment amongst machine learners.
+
+## the value of learning
+
+- in most discussions of machine learning, this capacity of the algorithms to learn is their most prized attribute. This is what differentiates machine learning  from programming, from coding. The claim is that machine learners can do things that cannot be programmed. Writing a program to detect cat faces _without_ using machine learning is very difficult. Similarly, writing a program to fly a helicopter upside down is very difficult, but machine learners do that. Or to give a standard, but complicated example: it is very difficult to understand the profitability of twitter without looking at the role of predictive classifiers in promoted tweets.
+- how should we think of this learning? Is there anything we can learn from this learning about the modes of sorting propagating today?
+
+## Track the learning of machine learning A
+
+- my first proposal is that we might better track the learning of machine learning. Heather Arthur, who coded kittdar, is a programmer working at Mozilla. The fact that she wrote the code for this machine learner  in Javascript, the language of web browsers, suggests that these techniques are being generalized. In trying to understand how algorithms value things we might need to understand how the value of algorithms are changing. The neural networks date from the mid-1980s, but suddenly we see them everywhere. How is that happening? How are they being re-valued? 
+
+Further, following on from this, how are different machine learners distributed? Here a power hierarchy might be discerned that could be worth following. What is the difference between a Andrew Ng, Cortes, Le Cun, Hinton, Demis Hassabis, Hilary Mantel and the tens of thousands of entrants in the machine learning competitions run by Kaggle?
+
+## Track the learning of machine learning B -- the processes of supervision
+
+- Hardly any of the algorithms learn without training or _supervision_ How are the algorithms supervised so that they learn? The supervision takes various forms. The selection of the training data is important, since all the algorithm knows of the world comes from the train data.
+- Possibly more importantly, we need to have a sense of machine learner  trade-off between the different metrics of learning. Sometimes a model is very accurate in learning to classify training data, but fails badly in relation to previously unseen or 'test' data. Sometime a model is not particularly accurate on the training data, but copes well with whatever comes its way when it faces the world. 
+- Learning to machine learning, it seems, involves coming to grips with these different sources of error, and much of the technical work in machine learning attempts to manage these errors. This work is little discussed, but it seems that the algorithms do it. 
+- Kittydar is no exception here -- we just drop images on it, and it classifies. But the signs of the supervised training of kittydar as not hard to find. For the neural network version, we can look at the 'weights' of the model, and then in the code, see how these weights have been selected. 
+- Nearly all of these algorithms can be opened, and indeed, many such openings of the blackbox are done by machine learners. But the more general work of supervising of machine learners, particularly the comparisons and competitions between models, the processes of selection and validation, are not only partially algorithmic. Yet they are vital to the performance of the models in any actual setting. Even the basic process of deciding whether a given problem will be attacked using a  neural network, a support vector machine, linear discriminant analysis, logistic regression or something else may make a big difference to the kind of sorting that results. 
+
+## Track changes in the world through algorithms
+
+- We saw that kittydar can barely cope with a head that turns away. This combination of power and brittleness, the capacity to do a lot but also very little, is highly typical of machine learners. If the world changes in a different direction to the training data, how does the algorithm cope? This is a particularly significant problem in social media. 
+- In order to make sense of these sometimes unstable mixtures of fragility and power, the errors in classification and the prediction errors that are constantly generated by these algorithms, could be worth investigating more carefully.
+- On the one hand, these errors are often seen as failures, or regarded as evidence that the world is too complicated for the predictive models. 
+- On the other hand, the many forms of deviance and misclassification produced by machine learners are generative. We might best think of them in the way that Foucault described delinquency in _Discipline and Punish_, a work whose title could be translated as _Supervise and Penalize_. The value of errors in sorting or classification is the opportunity they offer to pursue optimization. 
+- _Optimization_ is somewhat algorithmic, but in an unusual way. Optimization algorithms, which usually have a somewhat statistical flavour, envision errors as inevitable, and see the world as inherently noisy. They tend then to treat machine learning as a process of training in which errors are observed, and penalized. Models emerge as the product of an ongoing encounter with the world in which their performance is observed, examined, ranked and penalized according to rates of error. 
+- Error, then, I am suggesting, becomes the generative difference that animates the ongoing development of models, sometimes within the model itself, as weights or parameter are re-adjusted, and sometimes between models, as different models compete with each other. 
+
+
+
